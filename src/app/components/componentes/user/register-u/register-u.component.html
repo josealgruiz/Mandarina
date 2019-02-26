@@ -1,0 +1,27 @@
+<div class="register-box">
+  <h1>Register Here</h1>
+  <form #registerForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+      <!-- NAME INPUT -->
+      <label for="Name">Name</label>
+      <input class="campo" type="text" placeholder="Enter Name" [(ngModel)]="registerModel.name" #name="ngModel" [class.is-invalid]="name.is-invalid && name.touched"  required>
+      <!-- Lastname INPUT -->
+      <label for="Lastname">Lastname</label>
+      <input class="campo" type="text" placeholder="Enter Lastname" [(ngModel)]="registerModel.lname" #name="ngModel" [class.is-invalid]="name.is-invalid && name.touched"  required>
+      <!-- Email INPUT -->
+      <label for="Email">Email</label>
+      <input class="campo" type="text" placeholder="Enter Email" [(ngModel)]="registerModel.email" #name="ngModel" [class.is-invalid]="name.is-invalid && name.touched" required>
+      <!-- USERNAME INPUT -->
+      <label for="username">Username</label>
+      <input class="campo" type="text" placeholder="Enter Username" [(ngModel)]="registerModel.username" #name="ngModel" [class.is-invalid]="name.is-invalid && name.touched"required>
+      <!-- PASSWORD INPUT -->
+      <label for="password">Password</label>
+      <input type="password" placeholder="Enter Password" [(ngModel)]="registerModel.pass" #name="ngModel" [class.is-invalid]="name.is-invalid && name.touched" required>
+      <!-- PASSWORD INPUT -->
+      <label for="password">Confirm Password</label>
+      <input type="password" placeholder="Enter Password" [(ngModel)]="registerModel.pass" #name="ngModel" [class.is-invalid]="name.is-invalid && name.touched" required>
+      <!-- BOTON REGISTER -->
+      <a href="http://localhost:4200/bienvenida"><input [disabled]="lostaForm.form.invalid" class="btn"btype="submit" value="Register">
+      </a>
+  </form>
+</div>
+

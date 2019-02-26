@@ -1,0 +1,13 @@
+<div class="lost-a-box">
+    <h1>Lost Account?</h1>
+    <form #lostaForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+        <!-- USERNAME INPUT -->
+        <label class="user"for="username" >Username or Email</label>
+        <input class="box" type="text" placeholder="  ">
+        <!-- BOTON LOGIN -->
+        <a href="http://localhost:4200/bienvenida/login"><input [disabled]="lostaForm.form.invalid" class="btn"btype="submit" value="Recover">
+</a>
+    </form>
+  </div>
+
+   

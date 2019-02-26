@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Jose",
+      "lastName": "Alguindigue",
+      "email":"josealgruiz@gmail.com",
+      "type":"1"
+    },
+    {
+      "id": "2",
+      "firstName": "Ricardo",
+      "lastName": "Gomez",
+      "email":"Rgomez@gmail.com",
+      "type":"2"
+    } 
+  ]
+}

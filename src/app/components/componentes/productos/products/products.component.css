@@ -1,0 +1,36 @@
+.box{
+padding: 5px;
+border-width: 1px;
+border-color: black;
+border-radius: 5px;
+border-style: solid;
+text-align: center;
+width: 200px;
+height: 260px;
+
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+  }
+
+  p{
+      padding-bottom: 25px;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: black;
+}
+.main-box{
+  margin-top: 100px;
+  background-color: blue;
+}

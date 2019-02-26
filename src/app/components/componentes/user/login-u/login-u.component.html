@@ -1,0 +1,27 @@
+<div class="login-box">
+  <h1>Login Here</h1>
+  <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+      <!-- USERNAME INPUT -->
+      <label for="username">Username</label>
+      <input class="campo" type="text" placeholder="Enter Username"  [(ngModel)]="userModel.name" #name="ngModel" [class.is-invalid]="name.is-invalid && name.touched"  name="username" required>
+      <!--<small class="text-danger" [class.d-none]="name.valid || name.touched">Username required</small>-->
+      <!-- PASSWORD INPUT -->
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Enter Password" name="pass" [(ngModel)]="userModel.pass" #name="ngModel">
+      <!-- BOTON LOGIN -->
+      <a href="http://localhost:4200/inicio"><input [disabled]="lostaForm.form.invalid" class="btn"btype="submit" value="Sign in">
+      </a>
+      
+      <a href="http://localhost:4200/bienvenida/pass">Lost your Password?</a><br>
+      <a href="http://localhost:4200/bienvenida/registro">Don't have An account?</a>
+  </form>
+</div>
+
+<a href="http://localhost:4200/admin">:)</a><br>
+
+<!--validarUser(){
+if (User.name=='admin' ){
+console.log(alert);
+  
+}-->
